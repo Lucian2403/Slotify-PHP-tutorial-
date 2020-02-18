@@ -2,6 +2,7 @@
   <dictionary name="User">
     <words>
       <w>slotify</w>
+      <w>strlen</w>
     </words>
   </dictionary>
 </component>

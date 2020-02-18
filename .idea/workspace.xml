@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="745f4cae-06ce-4733-a81e-155f3fe1c1bb" name="Default Changelist" comment="" />
+    <list default="true" id="745f4cae-06ce-4733-a81e-155f3fe1c1bb" name="Default Changelist" comment="Rearrange code (create include folder)">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/User.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/User.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/handlers/register-handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/handlers/register-handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +32,15 @@
     <expand />
     <select />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XwuzN9Ibbo4gVdbhSnDPcWPPQY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
@@ -54,11 +66,41 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581969739949</updated>
-      <workItem from="1581969743428" duration="5113000" />
+      <workItem from="1581969743428" duration="9245000" />
     </task>
+    <task id="LOCAL-00001" summary="Rearrange code (create include folder)">
+      <created>1582056468027</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582056468027</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Rearrange code (create include folder)">
+      <created>1582056572323</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582056572323</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Rearrange code (create include folder)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rearrange code (create include folder)" />
   </component>
 </project>

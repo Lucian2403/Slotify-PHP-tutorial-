@@ -1,3 +1,14 @@
+<?php
+include("includes/classes/Account.php");
+
+//create variable "account" so we can use register and login handlers
+$account = new Account();
+
+include("includes/handlers/register-handler.php");
+include("includes/handlers/login-handler.php");
+?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -69,7 +80,3 @@
 
 </body>
 </html>
-
-<?php
-
-?>
