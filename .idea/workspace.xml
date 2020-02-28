@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="745f4cae-06ce-4733-a81e-155f3fe1c1bb" name="Default Changelist" comment="Rearrange code (create include folder)">
+      <change afterPath="$PROJECT_DIR$/includes/classes/Constants.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/User.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/User.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/classes/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/classes/Account.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/handlers/register-handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/handlers/register-handler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
@@ -32,6 +35,9 @@
     <expand />
     <select />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../Slotify\exportToHTML" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -42,7 +48,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -66,7 +72,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581969739949</updated>
-      <workItem from="1581969743428" duration="9245000" />
+      <workItem from="1581969743428" duration="24561000" />
+      <workItem from="1582753703667" duration="3361000" />
     </task>
     <task id="LOCAL-00001" summary="Rearrange code (create include folder)">
       <created>1582056468027</created>
@@ -93,7 +100,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

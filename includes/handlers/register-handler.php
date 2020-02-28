@@ -2,7 +2,7 @@
 
 // Functions for protection and cleaner input fields
 function sanitizeFormUsername($inputText) {
-    $inputText = strip_tags($inputText); //for protection!
+    $inputText = strip_tags($inputText); //for protection! Strip HTML and PHP tags from a string
     $inputText = str_replace(" ", "", $inputText);
     return $inputText;
 }
@@ -29,6 +29,10 @@ if(isset($_POST['registerButton'])) {
     $password  = sanitizeFormPassword($_POST['password']);
     $password2 = sanitizeFormPassword($_POST['password2']);
 
-    $account->register($username, $firstName, $lastName, $email, $email2, $password, $password2);
+    $wasSuccessful = $account->register($username, $firstName, $lastName, $email, $email2, $password, $password2);
+
+    if($wasSuccessful == true) {
+        header("Location: index.php");
+    }
 }
 
