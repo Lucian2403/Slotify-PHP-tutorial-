@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="745f4cae-06ce-4733-a81e-155f3fe1c1bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/classes/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/classes/Account.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/classes/Constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/classes/Constants.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/handlers/login-handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/handlers/login-handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
-    </list>
+    <list default="true" id="745f4cae-06ce-4733-a81e-155f3fe1c1bb" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +71,7 @@
       <updated>1581969739949</updated>
       <workItem from="1581969743428" duration="24561000" />
       <workItem from="1582753703667" duration="9970000" />
-      <workItem from="1583781072853" duration="2944000" />
+      <workItem from="1583781072853" duration="3207000" />
     </task>
     <task id="LOCAL-00001" summary="Rearrange code (create include folder)">
       <created>1582056468027</created>
@@ -101,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582926806441</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finishing the Register Form and Submitting to MySql">
+      <created>1583787623937</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583787623937</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +110,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -119,10 +144,16 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rearrange code (create include folder)" />
     <MESSAGE value="Validating Register Form &amp; First step to communicate with MySQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Validating Register Form &amp; First step to communicate with MySQL" />
+    <MESSAGE value="Finishing the Register Form and Submitting to MySql" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finishing the Register Form and Submitting to MySql" />
   </component>
 </project>
