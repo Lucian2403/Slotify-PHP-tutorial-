@@ -4,7 +4,7 @@ include("includes/classes/Account.php");
 include("includes/classes/Constants.php");
 
 //create variable "account" so we can use register and login handlers
-$account = new Account();
+$account = new Account($con);
 
 include("includes/handlers/register-handler.php");
 include("includes/handlers/login-handler.php");
@@ -29,6 +29,7 @@ function getInputValid($name) {
 <body>
 
     <div id="inputContainer">
+
 <!--        LOGIN FORM-->
         <form id="loginForm" action="register.php" method="POST">
             <h2>Login to your account</h2>
@@ -45,11 +46,13 @@ function getInputValid($name) {
             <button type="submit" name="loginButton">LOG IN</button>
         </form>
 
+
 <!--        REGISTER FORM-->
         <form id="loginForm" action="register.php" method="POST">
             <h2>Create your free account</h2>
             <p>
-                <?php echo $account->getError(Constants::$usernameCharacters) ?>
+                <?php echo $account->getError(Constants::$usernameCharacters);
+                      echo $account->getError(Constants::$usernameTaken) ?>
                 <label for="loginUsername">Username</label>
                 <input id="loginUsername" name="username" type="text" placeholder="Username" value="<?php getInputValid('username'); ?>" required>
 
@@ -67,8 +70,9 @@ function getInputValid($name) {
 
             </p>
             <p>
-                <?php echo $account->getError(Constants::$emailInvalid) ?>
-                <?php echo $account->getError(Constants::$emailsDoNotMatch) ?>
+                <?php echo $account->getError(Constants::$emailInvalid);
+                      echo $account->getError(Constants::$emailTaken);
+                      echo $account->getError(Constants::$emailsDoNotMatch) ?>
                 <label for="email">Email</label>
                 <input id="email" name="email" type="email" placeholder="Email" value="<?php getInputValid('email'); ?>" required>
 
@@ -79,9 +83,9 @@ function getInputValid($name) {
 
             </p>
             <p>
-                <?php echo $account->getError(Constants::$passwordsCharacters) ?>
-                <?php echo $account->getError(Constants::$passwordsDoNotMatch) ?>
-                <?php echo $account->getError(Constants::$passwordsNotAlphanumeric) ?>
+                <?php echo $account->getError(Constants::$passwordsCharacters);
+                      echo $account->getError(Constants::$passwordsDoNotMatch);
+                      echo $account->getError(Constants::$passwordsNotAlphanumeric) ?>
                 <label for="password">Password</label>
                 <input id="password" name="password" type="password" placeholder="Password" required>
             </p>

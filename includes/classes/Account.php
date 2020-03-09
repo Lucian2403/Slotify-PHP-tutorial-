@@ -1,10 +1,12 @@
 <?php
 class Account {
-    
+
+    private $con;
     private $errorArray;
     
-    public function __construct()
+    public function __construct($con)
     {
+        $this->con = $con;
         $this->errorArray = array();
     }
 
@@ -19,18 +21,30 @@ class Account {
 
         if(empty($this->errorArray)) {
             //insert into database
-            return true;
+            return $this->insertUserDetail($un, $fn, $ln, $em, $pw);
         }
         else {
             return false;
         }
     }
 
+    // check if validating inputs get error(s), then create a span text with that error and assign into HTML
     public function getError($error) {
         if(!in_array($error, $this->errorArray)) {
             $error = "";
         }
         return "<span class='errorMessage'>$error</span>";
+    }
+
+
+    private function insertUserDetail($un, $fn, $ln, $em, $pw) {
+        //Turn security (encryption) on for password (random numbers and letters)
+        $encryptedPw = md5($pw);
+        $profilePic = "assets/images/profile-pics/profile_pic.png";
+        $date = date("Y-m-d");
+
+        $result = mysqli_query($this->con, "INSERT INTO users VALUES ('', '$un', '$fn', '$ln', '$em', '$encryptedPw', '$date', '$profilePic')");
+        return $result;
     }
 
     //check if the input are following some patterns
@@ -41,7 +55,13 @@ class Account {
             array_push($this->errorArray, Constants::$usernameCharacters);
             return;
         }
-        //TODO: check if username exists
+
+        //Check if username already exists
+        $checkUsernameQuery = mysqli_query($this->con, "SELECT username FROM users WHERE username = '$un'");
+        if(mysqli_num_rows($checkUsernameQuery) != 0) {
+            array_push($this->errorArray, Constants::$usernameTaken);
+            return;
+        }
     }
 
     private function validateFirstname($fn)
@@ -71,6 +91,13 @@ class Account {
         //checks if the email is in email format (more detailed than type=email)
         if(!filter_var($em, FILTER_VALIDATE_EMAIL)) {
             array_push($this->errorArray, Constants::$emailInvalid);
+            return;
+        }
+
+        //Check if email already exists
+        $checkEmailQuery = mysqli_query($this->con, "SELECT username FROM users WHERE email = '$em'");
+        if(mysqli_num_rows($checkEmailQuery) != 0) {
+            array_push($this->errorArray, Constants::$emailTaken);
             return;
         }
     }
