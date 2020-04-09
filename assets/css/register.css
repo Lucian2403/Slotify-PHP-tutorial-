@@ -1,0 +1,125 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#background {
+    background-color: #000000;
+    background-image: url("../images/bg.jpg");
+    background-position-x: 65%;
+    background-size: cover;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+#loginContainer * {
+    color: #ffffff;
+    font-family: "Helvetica Nueu", "Helvetica", "Arial", sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+#loginContainer {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #ffffff;
+    font-size: 12px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ffffff;
+    opacity:  1;
+    font-size: 12px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ffffff;
+    opacity:  1;
+    font-size: 12px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ffffff;
+    font-size: 12px;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ffffff;
+    font-size: 12px;
+}
+::placeholder { /* Most modern browsers support this now. */
+    color:    #ffffff;
+    font-size: 12px;
+}
+::placeholder:focus { /* Most modern browsers support this now. */
+    border: none;
+}
+
+#inputContainer {
+    padding: 45px;
+    width: 450px;
+    float: left;
+    border-right: 1px solid #999999;
+}
+
+#inputContainer h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+#inputContainer input[type="text"],
+#inputContainer input[type="email"],
+#inputContainer input[type="password"] {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+    height: 35px;
+    line-height: 27px;
+    width: 100%;
+}
+
+#inputContainer label {
+    color: #a0a0a0;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+#inputContainer button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 200px;
+    margin: 20px auto;
+    font-size: 14px;
+    letter-spacing: 1px;
+    height: 41px;
+    width: 100%;
+    cursor: pointer;
+
+    transition: .2s ease-in-out;
+}
+
+#inputContainer button:hover {
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.15);
+
+}
+
+.hasAccountText span {
+    font-weight: bold !important;
+    font-size: 12px !important;
+}
+
+.hasAccountText {
+    text-align: center;
+}
+
+#registerForm,
+#loginForm{
+    display: none;
+}

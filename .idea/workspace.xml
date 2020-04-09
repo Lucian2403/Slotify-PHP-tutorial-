@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="745f4cae-06ce-4733-a81e-155f3fe1c1bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Slotify.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Slotify.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/classes/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/classes/Account.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/classes/Constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/classes/Constants.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/handlers/login-handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/handlers/login-handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/handlers/register-handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/handlers/register-handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,6 +38,9 @@
   <component name="ExportToHTMLSettings">
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../Slotify\exportToHTML" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Slotify" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -54,7 +56,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -73,6 +75,9 @@
       </list>
     </option>
   </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -85,7 +90,9 @@
       <updated>1581969739949</updated>
       <workItem from="1581969743428" duration="24561000" />
       <workItem from="1582753703667" duration="9970000" />
-      <workItem from="1583781072853" duration="9030000" />
+      <workItem from="1583781072853" duration="22572000" />
+      <workItem from="1585397658186" duration="9284000" />
+      <workItem from="1586427353653" duration="239000" />
     </task>
     <task id="LOCAL-00001" summary="Rearrange code (create include folder)">
       <created>1582056468027</created>
@@ -122,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583787780731</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Finishing the Login Form and started the SESSION()">
+      <created>1583876094578</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583876094578</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +215,7 @@
     <MESSAGE value="Rearrange code (create include folder)" />
     <MESSAGE value="Validating Register Form &amp; First step to communicate with MySQL" />
     <MESSAGE value="Finishing the Register Form and Submitting to MySql" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finishing the Register Form and Submitting to MySql" />
+    <MESSAGE value="Finishing the Login Form and started the SESSION()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finishing the Login Form and started the SESSION()" />
   </component>
 </project>
