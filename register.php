@@ -1,8 +1,8 @@
 <?php
 
 include ("includes/config.php");
-include("includes/classes/Account.php");
-include("includes/classes/Constants.php");
+include ("includes/classes/Account.php");
+include ("includes/classes/Constants.php");
 
 //create variable "account" so we can use register and login handlers
 $account = new Account($con);
@@ -63,7 +63,7 @@ function getInputValid($name) {
                     <p>
                         <?php echo $account->getError(Constants::$loginFailed);?>
                         <label for="loginUsername">Username</label>
-                        <input id="loginUsername" name="loginUsername" type="text" placeholder="Full Name" required>
+                        <input id="loginUsername" name="loginUsername" type="text" placeholder="Full Name" value="<?php getInputValid('loginUsername'); ?>" required>
 
                     </p>
                     <p>
@@ -133,6 +133,17 @@ function getInputValid($name) {
                     </div>
                 </form>
             </div>
+<!--            Right Section-->
+            <div id="loginText">
+                <h1>Get great music, right now</h1>
+                <h2>Listen to loads of songs for free</h2>
+                <ul>
+                    <li>Discover music you'll fall in love with</li>
+                    <li>Create your own playlists</li>
+                    <li>Follow artists to keep up to date</li>
+                </ul>
+            </div>
+
         </div>
     </div>
 

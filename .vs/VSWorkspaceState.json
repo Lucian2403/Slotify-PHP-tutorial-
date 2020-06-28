@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\assets",
+    "\\assets\\css",
+    "\\assets\\js",
+    "\\includes",
+    "\\includes\\classes",
+    "\\includes\\handlers"
+  ],
+  "SelectedNode": "\\includes\\handlers\\register-handler.php",
+  "PreviewInSolutionExplorer": false
+}
